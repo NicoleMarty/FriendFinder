@@ -13,7 +13,7 @@ var PORT = 3000;
 
 // shows homepage text
 app.get("/", function(req, res) {
-    res.send("Welcome to the Free Dinner Finder!");
+    res.send();
 });
 
 // gets all boy toys
