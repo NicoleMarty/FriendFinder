@@ -13,8 +13,9 @@ var PORT = 3000;
 
 // shows homepage text
 app.get("/", function(req, res) {
-    res.send();
+    res.sendFile(path.join(__dirname, "app/public/home.html"));
 });
+
 
 // gets all boy toys
 app.get("/api/boyToys", function(req, res) {
