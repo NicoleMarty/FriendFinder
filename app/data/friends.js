@@ -1,3 +1,5 @@
+// save your application's data inside of app/data/friends.js as an array of objects
+
 var data = [{
         "name": "Ahmed",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",

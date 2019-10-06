@@ -6,6 +6,8 @@ var path = require("path");
 var app = express();
 var PORT = 3000;
 
+// Data
+// ===========================================================
 var data = [{
         "name": "Ahmed",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
@@ -998,21 +1000,21 @@ app.get("/api/friends", function(req, res) {
     return res.json(data);
 });
 
-// gets only the chosen boy toy
-app.get("/api/boyToys/:boyToys", function(req, res) {
+// gets only the chosen friend
+app.get("/api/friends/:friends", function(req, res) {
     // pushes data to front end for chosen character
-    var theChosenOne = req.params.boyToys;
+    var theChosenOne = req.params.friends;
     console.log(theChosenOne);
 
-    // iterates through boy toy array to find chosen boy toy
-    for (var i = 0; i < boyToys.length; i++) {
-        if (theChosenOne === boyToys[i].routeName) {
-            return res.json(boyToys[i]);
+    // iterates through friend array to find chosen friend
+    for (var i = 0; i < friends.length; i++) {
+        if (theChosenOne === friends[i].routeName) {
+            return res.json(friends[i]);
         }
     }
 
-    // tells user if the boy toy is not found
-    return res.send("No boy toy found");
+    // tells user if the friend is not found
+    return res.send("No friend found");
 });
 
 // Listener
