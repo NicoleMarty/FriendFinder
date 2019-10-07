@@ -994,7 +994,7 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "app/public/home.html"));
 });
 
-// gets all friendssurvey which should display the survey page.
+// KEEP ME gets all friendssurvey which should display the survey page.
 app.get("/survey.html", function(req, res) {
     res.sendFile(path.join(__dirname, "app/public/survey.html"));
 });
