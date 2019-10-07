@@ -1001,24 +1001,7 @@ app.get("/survey.html", function(req, res) {
 
 // KEEP ME gets all friends
 app.get("/api/friends", function(req, res) {
-    return res.json(data);
-});
-
-// gets only the chosen friend
-app.get("/api/friends/:friends", function(req, res) {
-    // pushes data to front end for chosen character
-    var theChosenOne = req.params.friends;
-    console.log(theChosenOne);
-
-    // iterates through friend array to find chosen friend
-    for (var i = 0; i < friends.length; i++) {
-        if (theChosenOne === friends[i].routeName) {
-            return res.json(friends[i]);
-        }
-    }
-
-    // tells user if the friend is not found
-    return res.send("No friend found");
+    return res.json(dataArray);
 });
 
 // Listener
