@@ -21,7 +21,21 @@ module.exports = userArray;
 
 // compare the difference between current user's scores against those from other users, question by question.
 // ---------------------------------------------------------------------------------------------------
+function runUserQuery() {
+    // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+    $.ajax({
+            url: "/api/user",
+            method: "GET"
+        })
+        .then(function(userArray) {
 
+            // Here we then log the tableData to console, where it will show up as an object.
+            console.log(userArray);
+            console.log("------------------------------------");
+
+        });
+}
+runUserQuery();
 
 // Add up the differences to calculate the totalDifference.
 // Remember to use the absolute value of the differences.
