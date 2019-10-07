@@ -989,13 +989,17 @@ var data = [{
 // Routes
 // ===========================================================
 
-// shows homepage text
+// KEEP ME shows homepage text
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "app/public/home.html"));
 });
 
+// gets all friendssurvey which should display the survey page.
+app.get("/survey.html", function(req, res) {
+    res.sendFile(path.join(__dirname, "app/public/survey.html"));
+});
 
-// gets all friends
+// KEEP ME gets all friends
 app.get("/api/friends", function(req, res) {
     return res.json(data);
 });
