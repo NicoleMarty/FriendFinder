@@ -10,10 +10,8 @@ module.exports = function(app) {
 
     // A POST routes /api/friends. This will be used to handle incoming survey results. 
     // This route will also be used to handle the compatibility logic.
-    document.getElementsByID("#submit").on("click", function() {
-        app.post("/api/user", function(req, res) {
-            res.push(userArray);
-        })
-        console.log(userArray);
-    })
+    app.get("/api/user", function(req, res) {
+        return res.json(userArray);
+    });
+    console.log(userArray);
 };

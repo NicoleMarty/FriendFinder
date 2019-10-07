@@ -184,6 +184,22 @@
     $(document).ready(function() {
         $('.modal').modal();
     });
+
+    function runUserQuery() {
+        // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+        $.ajax({
+                url: "/api/user",
+                method: "GET"
+            })
+            .then(function(userArray) {
+
+                // Here we then log the tableData to console, where it will show up as an object.
+                console.log(userArray);
+                console.log("------------------------------------");
+
+            });
+    }
+    runUserQuery();
 </script>
 
 </html>
