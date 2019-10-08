@@ -13,23 +13,28 @@ var PORT = 3000;
 // compare the difference between current user's scores against those from other users, question by question.
 // ---------------------------------------------------------------------------------------------------
 var userArray = [{
-    "name": "Nicole",
+    "name": "",
     "photo": "",
     "scores": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 }];
 
 module.exports = userArray;
+
+// KEEP ME gets all user data
+app.get("/api/user", function(req, res) {
+    return res.json(userArray);
+});
 
 // Add up the differences to calculate the totalDifference.
 // Remember to use the absolute value of the differences.

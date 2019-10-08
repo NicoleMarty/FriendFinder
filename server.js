@@ -167,24 +167,33 @@ var dataArray = [{
             "4",
             "1"
         ]
+
     }
+
 ];
+
+
+module.exports = dataArray;
+// Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
+// ---------------------------------------------------------------------------------------------------
 var userArray = [{
-    "name": "Nicole",
+    "name": "",
     "photo": "",
     "scores": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4",
-        "4"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 }];
+
+module.exports = userArray;
 
 // Routes
 // ===========================================================
@@ -204,10 +213,11 @@ app.get("/api/friends", function(req, res) {
     return res.json(dataArray);
 });
 
-// KEEP ME gets all friends
+// KEEP ME gets all user data
 app.get("/api/user", function(req, res) {
     return res.json(userArray);
 });
+
 
 // Listener
 // ===========================================================
