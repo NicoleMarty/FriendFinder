@@ -70,7 +70,7 @@
 
 
         <div class="card #fafafa grey lighten-4">
-            <div id="scores" class="card-content black-text">
+            <div class="card-content black-text">
                 <div class="card-heading">
                     <h4>Questions</h4>
                 </div>
@@ -205,24 +205,22 @@
         $('select').formSelect();
     });
 
-    // jS for modal
-    $(document).ready(function() {
-        $('.modal').modal();
-    });
+
 
     $("#submit").on("click", function(event) {
         event.preventDefault();
 
         // Here we grab the form elements
         var userArray = [{
-            userName: $("#name").val().trim(),
-            userImage: $("#image").val().trim(),
-            userScores: [$("#answer1").val().trim(), $("#answer2").val().trim(), $("#answer3").val().trim(), $("#answer4").val().trim(), $("#answer5").val().trim(),
+            name: $("#name").val().trim(),
+            image: $("#image").val().trim(),
+            scores: [$("#answer1").val().trim(), $("#answer2").val().trim(), $("#answer3").val().trim(), $("#answer4").val().trim(), $("#answer5").val().trim(),
                 $("#answer6").val().trim(), $("#answer7").val().trim(), $("#answer8").val().trim(), $("#answer9").val().trim(), $("#answer10").val().trim()
             ]
         }];
 
-        console.log(userArray[userScores]);
+        console.log(userArray);
+
     });
 
 

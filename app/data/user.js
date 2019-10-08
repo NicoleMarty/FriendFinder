@@ -13,9 +13,9 @@ var PORT = 3000;
 // compare the difference between current user's scores against those from other users, question by question.
 // ---------------------------------------------------------------------------------------------------
 var userArray = [{
-    "name": "",
-    "photo": "",
-    "scores": [
+    name: "",
+    photo: "",
+    scores: [
         "",
         "",
         "",
