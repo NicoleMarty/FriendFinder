@@ -46,13 +46,37 @@
             </div>
         </div>
 
-    </div>
+        <div class="row">
+            <form id="name" class="col s12 m12 l12">
+                <h4>First Name</h4>
+                <input placeholder="Name" id="first_name" type="text" class="validate">
+                <label for="first_name"></label>
+            </form>
+        </div>
+        <div class="row">
+            <form id="image" class="col s12 m12 l12" action="#">
+                <h4>Profile Image</h4>
+                <div class="file-field input-field">
+                    <div class="btn #ff1744 red accent-3">
+                        <span>Upload Image</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                </div>
+            </form>
+        </div>
 
-    <div class="card #fafafa grey lighten-4">
-        <div class="card-content black-text">
-            <label>Question 1</label>
-            <h5>Your mind is always buzzing with unexplored ideas.</h5>
-            <select id="answer1" class="browser-default">
+
+        <div class="card #fafafa grey lighten-4">
+            <div id="scores" class="card-content black-text">
+                <div class="card-heading">
+                    <h4>Questions</h4>
+                </div>
+                <label>Question 1</label>
+                <h5>Your mind is always buzzing with unexplored ideas.</h5>
+                <select id="answer1" class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -61,10 +85,10 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 2</label>
-            <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
-            </h5>
-            <select class="browser-default">
+                <label>Question 2</label>
+                <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+                </h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -73,10 +97,10 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 3</label>
-            <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
-            </h5>
-            <select class="browser-default">
+                <label>Question 3</label>
+                <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+                </h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -85,9 +109,9 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 4</label>
-            <h5>You rarely do something just out of sheer curiosity.</h5>
-            <select class="browser-default">
+                <label>Question 4</label>
+                <h5>You rarely do something just out of sheer curiosity.</h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -96,9 +120,9 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 5</label>
-            <h5>People can rarely upset you.</h5>
-            <select class="browser-default">
+                <label>Question 5</label>
+                <h5>People can rarely upset you.</h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -107,9 +131,9 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 6</label>
-            <h5>It is often difficult for you to relate to other people’s feelings.</h5>
-            <select class="browser-default">
+                <label>Question 6</label>
+                <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -118,9 +142,9 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 7</label>
-            <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
-            <select class="browser-default">
+                <label>Question 7</label>
+                <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -129,9 +153,9 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 8</label>
-            <h5>You rarely get carried away by fantasies and ideas.</h5>
-            <select class="browser-default">
+                <label>Question 8</label>
+                <h5>You rarely get carried away by fantasies and ideas.</h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -140,9 +164,9 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 9</label>
-            <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
-            <select class="browser-default">
+                <label>Question 9</label>
+                <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -151,9 +175,9 @@
               <option value="3">5 (strongly agree)</option>
             </select>
 
-            <label>Question 10</label>
-            <h5>You feel more energetic after spending time with a group of people.</h5>
-            <select class="browser-default">
+                <label>Question 10</label>
+                <h5>You feel more energetic after spending time with a group of people.</h5>
+                <select class="browser-default">
               <option value="" disabled selected>Choose your option</option>
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
@@ -161,14 +185,15 @@
               <option value="3">4</option>
               <option value="3">5 (strongly agree)</option>
             </select>
-            <br></br>
-            <div class="col s12 m12 l12">
-                <button id="submit" class="btn #ff1744 red accent-3 waves-effect waves-light btn-large" type="submit" name="action">Submit
+                <br></br>
+                <div class="col s12 m12 l12">
+                    <button id="submit" class="btn #ff1744 red accent-3 waves-effect waves-light btn-large" type="submit" name="action">Submit
                                 <i class="material-icons right">send</i>
                               </button>
-            </div>
-            <br></br>
+                </div>
+                <br></br>
 
+            </div>
         </div>
     </div>
 
@@ -185,21 +210,34 @@
         $('.modal').modal();
     });
 
-    function runUserQuery() {
-        // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-        $.ajax({
-                url: "/api/user",
-                method: "GET"
-            })
-            .then(function(userArray) {
+    $("#submit").on("click", function(event) {
+                event.preventDefault();
 
-                // Here we then log the tableData to console, where it will show up as an object.
+                // Here we grab the form elements
+                var userArray = [{
+                    userName: $("#name").val().trim(),
+                    userImage: $("#image").val().trim(),
+                    userScores: [$("#scores").val().trim()]
+                }];
+
                 console.log(userArray);
-                console.log("------------------------------------");
 
-            });
-    }
-    runUserQuery();
+
+                function runUserQuery() {
+                    // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+                    $.ajax({
+                            url: "/api/user",
+                            method: "GET"
+                        })
+                        .then(function(userArray) {
+
+                            // Here we then log the tableData to console, where it will show up as an object.
+                            console.log(userArray);
+
+
+                        });
+                }
+                runUserQuery();
 </script>
 
 </html>
