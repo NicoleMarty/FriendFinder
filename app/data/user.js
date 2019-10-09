@@ -31,6 +31,22 @@ var userArray = [{
 
 module.exports = userArray;
 
+$("#submit").on("click", function(event) {
+    event.preventDefault();
+
+    // Here we grab the form elements
+    var userArray = [{
+        name: $("#name").val().trim(),
+        image: $("#image").val().trim(),
+        scores: [$("#answer1").val().trim(), $("#answer2").val().trim(), $("#answer3").val().trim(), $("#answer4").val().trim(), $("#answer5").val().trim(),
+            $("#answer6").val().trim(), $("#answer7").val().trim(), $("#answer8").val().trim(), $("#answer9").val().trim(), $("#answer10").val().trim()
+        ]
+    }];
+
+    console.log(userArray);
+
+});
+
 // KEEP ME gets all user data
 app.get("/api/user", function(req, res) {
     return res.json(userArray);
