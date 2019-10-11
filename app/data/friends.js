@@ -6,9 +6,6 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
 // Data
 // ===========================================================
 var dataArray = [{
@@ -175,7 +172,8 @@ var dataArray = [{
 
 ];
 
-module.exports = dataArray;
+
+
 // Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
 // ---------------------------------------------------------------------------------------------------
 var userArray = [{
@@ -194,23 +192,8 @@ var userArray = [{
         ""
     ]
 }];
-module.exports = userArray;
 
-$("#submit").on("click", function(event) {
-    event.preventDefault();
 
-    // Here we grab the form elements
-    var userArray = [{
-        name: $("#name").val().trim(),
-        image: $("#image").val().trim(),
-        scores: [$("#answer1").val().trim(), $("#answer2").val().trim(), $("#answer3").val().trim(), $("#answer4").val().trim(), $("#answer5").val().trim(),
-            $("#answer6").val().trim(), $("#answer7").val().trim(), $("#answer8").val().trim(), $("#answer9").val().trim(), $("#answer10").val().trim()
-        ]
-    }];
-
-    console.log(userArray);
-
-});
 
 // Routes
 // ===========================================================
@@ -236,6 +219,11 @@ app.get("/api/user", function(req, res) {
 });
 
 
+// Listener
+// ===========================================================
+app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+});
 // Listener
 // ===========================================================
 app.listen(PORT, function() {

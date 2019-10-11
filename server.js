@@ -172,8 +172,6 @@ var dataArray = [{
 
 ];
 
-console.log(dataArray.scores);
-module.exports = dataArray;
 
 
 // Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
@@ -195,7 +193,6 @@ var userArray = [{
     ]
 }];
 
-module.exports = userArray;
 
 // Routes
 // ===========================================================

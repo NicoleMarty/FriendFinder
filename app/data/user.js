@@ -32,7 +32,6 @@ var userArray = [{
     ]
 }];
 
-module.exports = userArray;
 
 $("#submit").on("click", function(event) {
     event.preventDefault();
