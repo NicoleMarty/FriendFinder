@@ -217,9 +217,10 @@
                 $("#submit").on("click", function(event) {
                     event.preventDefault();
                     for (var i = 0; i < dataArray.length; i++) {
-                        var friends = dataArray[i].scores;
-                        console.log(friends);
+                        var friendsData = dataArray[i].scores;
+                        console.log(friendsData);
                     }
+
                 });
                 // Here we then log the tableData to console, where it will show up as an object.
 
@@ -245,7 +246,10 @@
                             $("#answer6").val().trim(), $("#answer7").val().trim(), $("#answer8").val().trim(), $("#answer9").val().trim(), $("#answer10").val().trim()
                         ]
                     }];
-                    console.log(userArray);
+                    for (var i = 0; i < userArray.length; i++) {
+                        var userData = userArray[i].scores;
+                        console.log(userData);
+                    }
                 });
 
             });
