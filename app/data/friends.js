@@ -224,8 +224,3 @@ app.get("/api/user", function(req, res) {
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
 });
-// Listener
-// ===========================================================
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-});
